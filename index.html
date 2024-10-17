@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant The River</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+        .hero {
+            background-image: url(RES/slow-motion-shot-of-chef-with-flaming-stir-fry-shot-on-phantom-flex-4k-at-1000-fps-video.jpg);
+            height: 400px;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+          
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-navigation">
+            <a href="#" class="logo">The River</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="navigation" id="navbar">
+                <a href="#">Accueil</a>
+                <a href="#Menu">Menu</a>
+                <a href="#propos">À propos de nous</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="hero">
+        <h1>Bienvenue au Restaurant The River</h1>
+        <a href="#" class="btn btn-primary">Réserver maintenant</a>
+    </div>
+
+    <section class="container mt-5">
+        <h2 class="text-center">Notre Menu</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="RES/branzino.jpg" class="card-img-top" alt="Plat 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Plat 1</h5>
+                        <p class="card-text">Branzino</p>
+                        <p class="card-text">$25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="RES/spicy-soppressata-brick (1).jpg" class="card-img-top" alt="Plat 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Plat 2</h5>
+                        <p class="card-text">SPICY SOPPRESSATA    Brick-Oven Pizza - Tomato, Mozzarella, Basil, Honey</p>
+                        <p class="card-text">$20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="RES/duck-roasted-rohan-duck.jpg" class="card-img-top" alt="Plat 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Plat 3</h5>
+                        <p class="card-text">DUCK     Roasted Rohan Duck Breast, Charred Corn Fregola, Zucchini, Dried Apricots</p>
+                        <p class="card-text">$30</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="RES/duck-roasted-rohan-duck.jpg" class="card-img-top" alt="Plat 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Plat 4</h5>
+                        <p class="card-text">DUCK     Roasted Rohan Duck Breast, Charred Corn Fregola, Zucchini, Dried Apricots</p>
+                        <p class="card-text">$30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="RES/TOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg" class="img-fluid" alt="À propos de nous">
+            </div>
+            <div class="col-md-6">
+                <h2>À propos de nous</h2>
+                <p>The River Cafe has been, and still is, the most exclusive fine dining restaurant in Morocco since 1999. Located in one of casa’s most noteworthy and romantic settings, our American restaurant is well known around the world as a wonderful culinary destination. Nestled riverside under the Brooklyn Bridge, The River Café exudes romance with its breathtaking casa’s skyline views, gorgeous atmosphere and above all our classic American cuisine. The River Café similarly boasts one of the most outstanding wine lists in the world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <h2>Contactez-nous</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Restaurant Fictif. Tous droits réservés.</p>
+        <div>
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</head>
+</html>

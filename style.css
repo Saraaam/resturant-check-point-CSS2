@@ -1,0 +1,169 @@
+/* General Styles */
+
+header {
+    background-color: rgb(99, 67, 36);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-navigation {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.navigation {
+    margin-left: auto; /* Pushes the navigation to the right */
+}
+
+.navigation a {
+    color: rgb(223, 205, 183);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+
+.logo {
+    color: rgb(223, 205, 183);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+.navigation a:hover {
+    color: rgb(156, 85, 43);
+}
+
+/* Specific class for the river, assuming it’s inside the header */
+.river {
+    margin-right: auto; /* Pushes the river to the left */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Light gray background */
+}
+
+
+/* Hero Section Styles */
+.hero {
+    height: 500px; /* Increased height for a more dramatic effect */
+    background-position: center; /* Center the background image */
+    color:rgb(223, 205, 183);
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: inset 0 0 50px rgba(6, 6, 6, 0.7); /* Darken the background */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+.hero a {
+    margin-top: 20px;
+    color: rgb(245, 250, 250);
+    background-color: rgb(99, 67, 36);
+    border: 2px solid #ffffff
+}
+
+/* Button Styles */
+
+
+/* Card Styles */
+.card {
+    margin-bottom: 30px; /* Space between cards */
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 15px 15px 0 0; /* Rounded corners on top */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center; /* Center text */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ff5733; /* Theme color for links */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .navigation {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background: #333;
+        top: 50px; /* Adjust according to header height */
+        left: 0;
+        z-index: 1;
+    }
+
+    .navigation.active {
+        display: flex; /* Show when active */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show toggle button */
+        right: auto;
+        float: right;
+    }
+}
